@@ -31,11 +31,12 @@
             this.btnCrear = new System.Windows.Forms.Button();
             this.txtDatos = new System.Windows.Forms.TextBox();
             this.btnGrabar = new System.Windows.Forms.Button();
+            this.btnLeer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCrear
             // 
-            this.btnCrear.Location = new System.Drawing.Point(97, 336);
+            this.btnCrear.Location = new System.Drawing.Point(47, 259);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(112, 48);
             this.btnCrear.TabIndex = 0;
@@ -61,11 +62,22 @@
             this.btnGrabar.UseVisualStyleBackColor = true;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
+            // btnLeer
+            // 
+            this.btnLeer.Location = new System.Drawing.Point(249, 259);
+            this.btnLeer.Name = "btnLeer";
+            this.btnLeer.Size = new System.Drawing.Size(112, 48);
+            this.btnLeer.TabIndex = 3;
+            this.btnLeer.Text = "Leer";
+            this.btnLeer.UseVisualStyleBackColor = true;
+            this.btnLeer.Click += new System.EventHandler(this.btnLeer_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 427);
+            this.Controls.Add(this.btnLeer);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.txtDatos);
             this.Controls.Add(this.btnCrear);
@@ -81,6 +93,7 @@
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.TextBox txtDatos;
         private System.Windows.Forms.Button btnGrabar;
+        private System.Windows.Forms.Button btnLeer;
     }
 }
 
